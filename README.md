@@ -49,18 +49,13 @@ post_install_message: |
 
 ## Specification
 
-The file MUST be named `gemspec.yml`.
-
-The file MUST be located in the top-level directory of the gem.
-
-The file MUST contain plain YAML.
-
-Nested elements MUST be indented by two spaces.
-
-The each line SHOULD NOT exceed 80 columns.
-
-The [`gemspec.yml`][gemspec.yml] file MUST be accompanied by a
-[`<name>.gemspec`][.gemspec] file, which loads it's contents.
+* The file MUST be named `gemspec.yml`.
+* The file MUST be located in the top-level directory of the gem.
+* The file MUST contain plain YAML.
+* Nested elements MUST be indented by two spaces.
+* The each line SHOULD NOT exceed 80 columns.
+* The [`gemspec.yml`][gemspec.yml] file MUST be accompanied by a
+  [`<name>.gemspec`][.gemspec] file, which loads it's contents.
 
 ### name
 
