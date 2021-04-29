@@ -272,7 +272,7 @@ gem's `ext/` directory, if it exists.
 
 **Type:** String or Array of Strings
 
-**Format:** path or dir glob pattern
+**Format:** relative path or dir glob pattern
 
 ### files
 
