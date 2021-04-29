@@ -53,7 +53,7 @@ The file MUST be named `gemspec.yml`.
 
 The file MUST contain plain YAML.
 
-The file's contents MUST NOT exceed 80 columns.
+The file's contents SHOULD NOT exceed 80 columns.
 
 The `gemspec.yml` file MUST be accompanied by a `<name>.gemspec` file, which
 loads it's contents.
