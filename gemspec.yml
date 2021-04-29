@@ -1,0 +1,35 @@
+name: foo
+# version: 0.0.1
+summary: Foo gem
+description:
+  More stuff about the foo gem
+
+license: MIT
+authors: You
+email: you@example.com
+homepage: https://github.com/you/foo#readme
+
+metadata:
+  documentation_uri: https://rubydoc.info/gems/foo
+  source_code_uri:   https://github.com/you/foo
+  bug_tracker_uri:   https://github.com/you/foo/issues
+  changelog_uri:     https://github.com/you/foo/blob/master/ChangeLog.md
+
+# requirements: graphviz >= 2.0.0
+
+# required_ruby_version: ">= 2.0.0"
+
+# dependencies:
+#   bar: ~> 0.1
+#   baz: ~> 0.2, >= 0.2.4
+#   quix: ">= 1.2.3, < 2"
+
+# development_dependencies:
+#   bundler: ~> 2.0
+
+# post_install_message: |
+#   Multi-Line
+#
+#       $ echo "post install"
+#   
+#   Message
