@@ -30,7 +30,6 @@ Gem::Specification.new do |gem|
   gem.executables = gemspec.fetch('executables') do
     glob['bin/*'].map { |path| File.basename(path) }
   end
-  gem.default_executable = gem.executables.first if Gem::VERSION < '1.7.'
 
   gem.extensions       = glob[gemspec['extensions'] || 'ext/**/extconf.rb']
   gem.extra_rdoc_files = glob[gemspec['extra_doc_files'] || '*.{txt,md}']
