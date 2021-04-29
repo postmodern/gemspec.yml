@@ -51,6 +51,8 @@ post_install_message: |
 
 The file MUST be named `gemspec.yml`.
 
+The file MUST be located in the top-level directory of the gem.
+
 The file MUST contain plain YAML.
 
 The file's contents SHOULD NOT exceed 80 columns.
