@@ -1,4 +1,4 @@
-# gemspec.yml
+# gemspec.yml (v1.0)
 
 > All you need is YAML.
 
