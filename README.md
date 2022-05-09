@@ -6,6 +6,15 @@
 in plain YAML, and have it loaded by a [boilerplate `<name>.gemspec`][.gemspec]
 file which fills in any missing data with smart defaults.
 
+## Install
+
+```shell
+git clone https://github.com/postmodern/gemspec.yml.git
+mkdir newgem/
+cp gemspec.yml/gemspec.yml newgem/
+cp gemspec.yml/foo.gemspec newgem/newgem.gemspec
+```
+
 ## Example
 
 ```yaml
