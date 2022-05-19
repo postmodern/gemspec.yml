@@ -31,6 +31,7 @@ Gem::Specification.new do |gem|
   end
 
   gem.extensions       = glob[gemspec['extensions'] || 'ext/**/extconf.rb']
+  gem.test_files       = glob[gemspec['test_files'] || '{test/{**/}*_test.rb,spec/{**/}*_spec.rb}']
   gem.extra_rdoc_files = glob[gemspec['extra_doc_files'] || '*.{txt,md}']
 
   gem.require_paths = Array(gemspec.fetch('require_paths') {
