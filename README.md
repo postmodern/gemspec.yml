@@ -324,6 +324,23 @@ extra_doc_files:
 
 **Format:** relative path or dir glob pattern
 
+### test_files
+
+The unit/spec test files.
+
+```yaml
+test_files: test/{**/}*_test.rb
+```
+
+**Required:** no
+
+**Default:** if omitted, it will default to
+the `{test/{**/}*_test.rb,spec/{**/}*_spec.rb` glob pattern.
+
+**Type:** String or Array of Strings
+
+**Format:** relative path or dir glob pattern
+
 ### requirements
 
 Any external dependencies for the gem.
