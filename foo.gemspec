@@ -22,16 +22,16 @@ Gem::Specification.new do |gem|
 
   glob = lambda { |patterns| gem.files & Dir[*patterns] }
 
-  gem.files = if gemspec['files'] then glob[gemspec['files']]
-              else                     `git ls-files`.split($/)
-              end
+  gem.files = `git ls-files`.split($/)
+  gem.files = glob[gemspec['files']] if gemspec['files']
 
   gem.executables = gemspec.fetch('executables') do
     glob['bin/*'].map { |path| File.basename(path) }
   end
 
   gem.extensions       = glob[gemspec['extensions'] || 'ext/**/extconf.rb']
-  gem.test_files       = glob[gemspec['test_files'] || '{test/{**/}*_test.rb,spec/{**/}*_spec.rb}']
+  gem.test_files       = glob[gemspec['test_files'] || 
+                              '{test/{**/}*_test.rb,spec/{**/}*_spec.rb}']
   gem.extra_rdoc_files = glob[gemspec['extra_doc_files'] || '*.{txt,md}']
 
   gem.require_paths = Array(gemspec.fetch('require_paths') {
